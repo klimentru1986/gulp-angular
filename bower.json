@@ -1,0 +1,28 @@
+{
+  "name": "template",
+  "authors": [
+    "Kliment Rudnichenko <kliment1986@inbox.ru>"
+  ],
+  "description": "base template with gulp and angularJS",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-material": "^1.0.9",
+    "angular-ui-router": "^0.3.1"
+  },
+  "group": {
+    "home": [
+      "jquery"
+    ]
+  }
+}

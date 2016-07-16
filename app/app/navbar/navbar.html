@@ -1,0 +1,16 @@
+<md-toolbar flex-md ng-controller="NavbarCtrl as nc">
+      <div class="md-toolbar-tools">
+        <h1>
+          <span>Примеры AngularJS</span>
+        </h1>
+
+        <span flex></span>
+
+      <section layout="row" layout-align="center center" hide-xs>
+        <md-button ng-repeat="nav in nc.nav" aria-label="{{nav.name}}" ui-sref="{{nav.sref}}">
+          {{nav.name}}
+        </md-button>
+      </section>
+
+      </div>
+</md-toolbar>
