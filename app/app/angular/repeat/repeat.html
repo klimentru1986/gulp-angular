@@ -1,0 +1,20 @@
+<section layout="column" layout-padding flex class="ang-repeat" ng-cloak>
+	<table>
+	<thead>
+		<th><md-button class="md-no-style" ng-click="arc.sortBy('name')">Имя</md-button></th>
+		<th><md-button class="md-no-style" ng-click="arc.sortBy('age')">Возраст</md-button></th>
+		<th><md-button class="md-no-style" ng-click="arc.sortBy('gender')">Пол</md-button></th>
+		<th><md-button class="md-no-style" ng-click="arc.sortBy('phone')">Телефон</md-button></th>
+		<th><md-button class="md-no-style" ng-click="arc.sortBy('email')">Электронный адресс</md-button></th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in arc.users | orderBy:arc.propertyName:arc.reverse" >
+			<td>{{user.name}}</td>
+			<td>{{user.age}}</td>
+			<td>{{user.gender}}</td>
+			<td>{{user.phone}}</td>
+			<td>{{user.email}}</td>
+		</tr>
+	</tbody>
+	</table>
+</section>

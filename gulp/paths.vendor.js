@@ -9,11 +9,13 @@
 		'app/bower/angular-aria/angular-aria.js',
 		'app/bower/angular-messages/angular-messages.js',
 		'app/bower/angular-material/angular-material.js',
+		'app/bower/angular-material-icons/angular-material-icons.js',
 		// 'app/bower/firebase/firebase-debug.js',
 		// 'app/bower/angularfire/dist/angularfire.js',
 		],
 		css: [
 		'app/bower/angular-material/angular-material.css',
+		'app/bower/angular-material-icons/angular-material-icons.css',
 		]
 	};
 

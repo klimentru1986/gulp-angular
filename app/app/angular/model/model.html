@@ -1,0 +1,48 @@
+<div layout="row" 
+	layout-xs="column"
+	layout-padding 
+	ng-cloak 
+	class="ang-model">
+  <md-content flex flex-gt-xs="40">
+    <md-input-container class="md-block">
+      <label>Имя</label>
+      <md-icon>
+      	<ng-md-icon icon="person" size="28"></ng-md-icon>
+      </md-icon>
+      <input ng-model="amc.user.name" type="text">
+    </md-input-container>
+    <md-input-container class="md-block">
+      <md-icon>
+      	<ng-md-icon icon="phone" size="28"></ng-md-icon>
+      </md-icon>
+      <input ng-model="amc.user.phone" type="text" placeholder="Телефон">
+    </md-input-container>
+    <md-input-container class="md-block">
+      <md-icon class="email">
+      	<ng-md-icon icon="email" size="28" class="email"></ng-md-icon>
+      </md-icon>
+      <input ng-model="amc.user.email" type="email" placeholder="Email">
+    </md-input-container>
+  </md-content>
+
+  <md-content flex layout>
+	<md-card md-theme-watch flex>
+        <md-card-title layout-padding layout-xs="column">
+          <md-card-title-media>
+            <div class="md-media-md card-media">
+            	<img src="../../img/avatar.jpg" alt="Аватар">
+            </div>
+          </md-card-title-media>
+          <md-card-title-text>
+            <span class="md-headline">Имя: {{amc.user.name}}</span>
+            <span class="md-subhead">Телефон: {{amc.user.phone}}</span>
+            <span class="md-subhead">Почта: {{amc.user.email}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Action 1</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>
+    </md-card>
+  </md-content>
+</div>

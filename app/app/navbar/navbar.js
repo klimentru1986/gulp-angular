@@ -9,7 +9,7 @@
 
 	function NavbarConfig () {};
 	function NavbarRun () {};
-	function NavbarCtrl ($log) {
+	function NavbarCtrl () {
 		var vm = this;
 
 		vm.nav = [

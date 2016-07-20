@@ -1,13 +1,13 @@
 # Gulp-Angular
 
-## Description
+## Описание
 
 Сборщик Gulp под проекты на Angular с примерами
 
 ## Установка
 
 ```sh
-$ git clone https://github.com/klimentru1986/builder_gulp
+$ git clone https://github.com/klimentru1986/gulp-angular
 $ npm install
 $ bower install
 $ gulp build

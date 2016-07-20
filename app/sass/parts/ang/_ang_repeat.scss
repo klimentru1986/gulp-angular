@@ -1,0 +1,17 @@
+.ang-repeat{
+	overflow-y: scrol;
+}
+
+.ang-repeat th{
+	text-align: left;
+	& .md-button{
+		padding: 0 10px;
+		width: 100%;
+	}
+}
+
+.ang-repeat td{
+	text-align: left;
+	padding: 5px 10px;
+}
+

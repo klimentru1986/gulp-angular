@@ -1,16 +1,33 @@
 <md-toolbar flex-md ng-controller="NavbarCtrl as nc">
       <div class="md-toolbar-tools">
+        <a ui-sref="home">
         <h1>
           <span>Примеры AngularJS</span>
         </h1>
-
+        </a>
         <span flex></span>
 
       <section layout="row" layout-align="center center" hide-xs>
-        <md-button ng-repeat="nav in nc.nav" aria-label="{{nav.name}}" ui-sref="{{nav.sref}}">
+        <md-button 
+          ng-repeat="nav in nc.nav" 
+          aria-label="{{nav.name}}" 
+          ui-sref="{{nav.sref}}">
           {{nav.name}}
         </md-button>
       </section>
+
+      <md-menu md-position-mode="target-right target" hide show-xs>
+          <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+            <ng-md-icon icon="menu"></ng-md-icon>
+          </md-button>
+          <md-menu-content width="4" >
+            <md-menu-item ng-repeat="nav in nc.nav" >
+              <md-button aria-label="{{nav.name}}" ui-sref="{{nav.sref}}">
+                {{nav.name}}
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
 
       </div>
 </md-toolbar>

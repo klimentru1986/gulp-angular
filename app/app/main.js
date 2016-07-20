@@ -5,8 +5,10 @@
 		.module('app',[
 			'ui.router',
 			'ngMaterial',
+			'ngMdIcons',
 			'app.navbar',
-			'app.home'
+			'app.home',
+			'app.ang'
 			])
 			.config(AppConfig)
 			.run(AppRun)
